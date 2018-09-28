@@ -1,0 +1,46 @@
+{
+	"info": {
+		"_postman_id": "aad87433-b0e9-46dd-9e08-f4e7489eb8cd",
+		"name": "Ergast_API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "2017 Circuits",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "a3f9eafe-38d1-4784-9b89-a152cc257614",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://ergast.com/api/f1/2017/circuits.json",
+					"protocol": "http",
+					"host": [
+						"ergast",
+						"com"
+					],
+					"path": [
+						"api",
+						"f1",
+						"2017",
+						"circuits.json"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
